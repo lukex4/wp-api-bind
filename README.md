@@ -6,7 +6,7 @@ General purpose plugin which enables binding of API JSON responses to posts and 
 
 Before an API can be bound to a page or post, it must be created as a 'binding' option. Once API Bind has been installed, in the WordPress admin panel click Tools -> API Bindings. You will be presented with a form to create new bindings, as well as a list of existing bindings below.
 
-![Image of API bindings screen](https://raw.github.immediate.co.uk/WCP/im-api-bind/master/inc/1.png?token=AAAAu1TMXcKhggLv3H3yBgAHtCCPgG_pks5XNHYkwA%3D%3D)
+![Image of API bindings screen](https://raw.githubusercontent.com/lukex4/wp-api-bind/master/wp-api-bind/inc/1.png)
 
 To create a new API binding you will need some basic information about the API. Does the API require a HTTP GET or HTTP POST? What's the base URI of the API endpoint you want to call? Enter those details in the form, and give this binding a name (the name is used elsewhere so make it something memorable and unique to that API binding), e.g Episode API Lookup.
 
@@ -38,7 +38,7 @@ Once you've added the relevant basic information and any optional fields you wis
 
 Pages are the main focus of this introduction, as I feel it will be more common to bind a page to an API call rather than a post. An example of how this might be relevant: Say you have an Episode page which, when passed an epID, calls an API to retrieve the details of a specific episode of a specific TV show. The WordPress page would have a specific template, and would be set up to handle the specific of the API call.
 
-![Image of page-API binding options](https://raw.github.immediate.co.uk/WCP/im-api-bind/master/inc/2.png?token=AAAAu759AUX7nCCI1AgLnfUfWPXAWQ22ks5XNHZ1wA%3D%3D)
+![Image of page-API binding options](https://raw.githubusercontent.com/lukex4/wp-api-bind/master/wp-api-bind/inc/2.png)
 
 In WordPress, click Pages->Add New. Enter a basic title (e.g Episode Lookup). On the right sidebar you will see a box titled 'API Data Sources', which contains a dropdown with all the API Bindings you have set up on the previous screen. Now if you click 'Episode API Lookup' from the dropdown, you will see options appear for mapping values to the fields you created for this API binding.
 
@@ -143,4 +143,4 @@ Now if you load the page, and pass it the appropriate value via the HTTP GET var
 
 http://my.site/episode-lookup/?epID=d5c28m
 
-![Image of page rendering with an API binding](https://raw.github.immediate.co.uk/WCP/im-api-bind/master/inc/3.png?token=AAAAuzP-Xx2ceu5WZM_p4Z9OJYV7aqYEks5XNHaZwA%3D%3D)
+![Image of page rendering with an API binding](https://raw.githubusercontent.com/lukex4/wp-api-bind/master/wp-api-bind/inc/3.png)
